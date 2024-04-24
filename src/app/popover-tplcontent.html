@@ -1,0 +1,19 @@
+<ng-template #popContent>
+  <i class="bi bi-bug console console-error"></i>
+  <br />
+  <br />
+  <i class="bi bi-exclamation console console-warning"></i>
+  <br />
+  <br />
+  <i class="bi bi-info console console-info"></i>
+</ng-template>
+<button
+  style="position: absolute; bottom: 4px; left: 4px"
+  type="button"
+  class="btn btn-outline-secondary"
+  [ngbPopover]="popContent"
+  [placement]="'top'"
+  triggers="mouseenter:mouseleave"
+>
+  <i class="bi bi-arrow-up-circle"></i>
+</button>
